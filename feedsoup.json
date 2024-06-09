@@ -1,0 +1,15 @@
+{
+    "username": "Feedbro Bot",
+    "avatar_url": "https://example.com/avatar.png",
+    "embeds": [
+      {
+        "title": "${title}",
+        "description": "${description}",
+        "url": "${link}",
+        "color": 16711680,
+        "footer": {
+          "text": "Published on ${date}"
+        }
+      }
+    ]
+  }
