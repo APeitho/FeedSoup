@@ -1,10 +1,10 @@
 // JavaScript to send FeedBro RSS feeds to Discord webhook
-var webhookURL = "YOUR_DISCORD_WEBHOOK_URL"; // Replace with your Discord webhook URL
+var webhookURL = "https://discord.com/api/webhooks/1240870541406244885/1Vx2-Yrj-Dvm212b5hHaTsZ9Di0y4bLkqh_KwBDLmYplBKM_V7An_5NFS-FxiL38Fem6"; // Replace with your Discord webhook URL
 
 function sendToDiscord(item) {
     var message = {
         "content": "",
-        "username": "FeedBro Bot",
+    "username": "Hey Trainers!",
         "embeds": [
             {
                 "title": item.title,
