@@ -5,28 +5,36 @@ function sendToDiscord(item, webhookURL) {
     // Select the appropriate configuration based on the webhook URL
     if (webhookURL === "POKEMONTCG") {
         config = {
-            // First configuration
+            // Pokemon TCG
         };
     } else if (webhookURL === "FABTCG") {
         config = {
-            // Second configuration
+            // FAB
         };
         
     } else if (webhookURL === "MTGTCG") {
             config = {
-                // Third configuration
+                // MTG
             };
     } else if (webhookURL === "https://discordapp.com/api/webhooks/1240869124125491251/Wb5YXtPx2yEP17l32vl3cAPfKG9HwDU8nfxpd8RrG4iaMbCQTG2FbKS0SiA8RAofFpU3") {
             config = {
-                // Fourth configuration
+                // SWLegion
             };
     } else if (webhookURL === "D&D") {
             config = {
-                // Fifth configuration
+                // Dungeons and Dragons
             };
     }   else if (webhookURL === "GWorkshop") {
             config = {
-                // 6th config
+                // Games Workshop
+            };
+    }else if (webhookURL === "NSFigures")
+            config = {
+                // NSFigures
+            };
+    } else if (webhookURL === "Warlord")
+            config = {
+                // Warlord Games here
             };
     } else {
         config = {
