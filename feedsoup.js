@@ -27,11 +27,11 @@ function sendToDiscord(item, webhookURL) {
             config = {
                 // Games Workshop
             };
-       elseif (webhookURL === "NSFigures");
+    elseif (webhookURL === "NSFigures");
             config = {
                 // NSFigures
             };
-      elseif(webhookURL === "Warlord")
+    elseif(webhookURL === "Warlord")
             config = {
                 // Warlord Games here
             };
