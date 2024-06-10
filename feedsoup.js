@@ -21,7 +21,7 @@ function sendToDiscord(item, webhookURL) {
             };
     elseif (webhookURL === "D&D") ;
             config = {
-                // Dungeons and Dragons
+                config: username = "Wizard"
             };
     elseif (webhookURL === "GWorkshop") ;
             config = {
