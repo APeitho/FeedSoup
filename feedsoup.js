@@ -3,45 +3,39 @@ function sendToDiscord(item, webhookURL) {
     var config;
 
     // Select the appropriate configuration based on the webhook URL
-    if (webhookURL === "POKEMONTCG") {
+    if (webhookURL === "POKEMONTCG")
         config = {
             // Pokemon TCG
         };
-    } else if (webhookURL === "FABTCG") {
+    elseif (webhookURL === "FABTCG");
         config = {
             // FAB
         };
-        
-    } else if (webhookURL === "MTGTCG") {
+    elseif (webhookURL === "MTGTCG");
             config = {
                 // MTG
             };
-    } else if (webhookURL === "https://discordapp.com/api/webhooks/1240869124125491251/Wb5YXtPx2yEP17l32vl3cAPfKG9HwDU8nfxpd8RrG4iaMbCQTG2FbKS0SiA8RAofFpU3") {
+    elseif (webhookURL === "https://discordapp.com/api/webhooks/1240869124125491251/Wb5YXtPx2yEP17l32vl3cAPfKG9HwDU8nfxpd8RrG4iaMbCQTG2FbKS0SiA8RAofFpU3") ;
             config = {
                 // SWLegion
             };
-    } else if (webhookURL === "D&D") {
+    elseif (webhookURL === "D&D") ;
             config = {
                 // Dungeons and Dragons
             };
-    }   else if (webhookURL === "GWorkshop") {
+    elseif (webhookURL === "GWorkshop") ;
             config = {
                 // Games Workshop
             };
-    }else if (webhookURL === "NSFigures")
+       elseif (webhookURL === "NSFigures");
             config = {
                 // NSFigures
             };
-    } else if (webhookURL === "Warlord")
+      elseif(webhookURL === "Warlord")
             config = {
                 // Warlord Games here
             };
-    } else {
-        config = {
-            // Fifth configuration
-        };
-    }
-
+    
     var message = {
         "content": config.content,
         "username": config.username,
@@ -62,9 +56,9 @@ function sendToDiscord(item, webhookURL) {
     xhr.open("POST", webhookURL, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(message));
-}
 
 // Call sendToDiscord for each item
 for (var i = 0; i < items.length; i++) {
     sendToDiscord(items[i]);
+}
 }
