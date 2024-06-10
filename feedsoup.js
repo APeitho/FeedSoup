@@ -1,23 +1,55 @@
 // JavaScript to send FeedBro RSS feeds to Discord webhook
-var webhookURL = "https://discord.com/api/webhooks/1240870541406244885/1Vx2-Yrj-Dvm212b5hHaTsZ9Di0y4bLkqh_KwBDLmYplBKM_V7An_5NFS-FxiL38Fem6"; // Replace with your Discord webhook URL
+function sendToDiscord(item, webhookURL) {
+    var config;
 
-function sendToDiscord(item) {
+    // Select the appropriate configuration based on the webhook URL
+    if (webhookURL === "POKEMONTCG") {
+        config = {
+            // First configuration
+        };
+    } else if (webhookURL === "FABTCG") {
+        config = {
+            // Second configuration
+        };
+        
+    } else if (webhookURL === "MTGTCG") {
+            config = {
+                // Third configuration
+            };
+    } else if (webhookURL === "https://discordapp.com/api/webhooks/1240869124125491251/Wb5YXtPx2yEP17l32vl3cAPfKG9HwDU8nfxpd8RrG4iaMbCQTG2FbKS0SiA8RAofFpU3") {
+            config = {
+                // Fourth configuration
+            };
+    } else if (webhookURL === "D&D") {
+            config = {
+                // Fifth configuration
+            };
+    }   else if (webhookURL === "GWorkshop") {
+            config = {
+                // 6th config
+            };
+    } else {
+        config = {
+            // Fifth configuration
+        };
+    }
+
     var message = {
-        "content": "",
-    "username": "Hey Trainers!",
+        "content": config.content,
+        "username": config.username,
         "embeds": [
             {
                 "title": item.title,
                 "description": item.summary,
                 "url": item.link,
-                "color": 5814783,
+                "color": config.embeds[0].color,
                 "footer": {
-                    "text": item.publishedDate
+                    "text": config.embeds[0].footer.text.replace("${PubDate}", item.publishedDate).replace("${author}", item.author),
+                    "icon_url": config.embeds[0].footer.replace("$icon_url")
                 }
             }
         ]
     };
-
     var xhr = new XMLHttpRequest();
     xhr.open("POST", webhookURL, true);
     xhr.setRequestHeader("Content-Type", "application/json");
