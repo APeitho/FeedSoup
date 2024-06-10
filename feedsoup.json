@@ -1,15 +1,50 @@
 {
-    "username": "Feedbro Bot",
-    "avatar_url": "https://example.com/avatar.png",
+    "username": "Hey Trainers!",
+    "avatar_url": "https://www.canva.com/design/DAGHsNSO_zg/kVLXNTBf5jj3Bv8shblLHA/edit?utm_content=DAGHsNSO_zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    "content": "Gym Trainers notified.",
     "embeds": [
-      {
+        {
         "title": "${title}",
         "description": "${description}",
         "url": "${link}",
         "color": 16711680,
         "footer": {
-          "text": "Published on ${date}"
+          "text": "Published on ${pubDate} | © ${author}",
+          "icon_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Pok%C3%A9mon_Trading_Card_Game_logo.svg"
         }
-      }
+    }
     ]
-  }
+
+   "username": "Legion Transmissions",
+   "avatar_url": "https://www.canva.com/design/DAGHsNSO_zg/kVLXNTBf5jj3Bv8shblLHA/edit?utm_content=DAGHsNSO_zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+   "content": "Transmission received.",
+   "embeds": [
+        {
+      "title": "${title}",
+      "description": "${description}",
+      "url": "${link}",
+      "color": 16711680,
+      "footer": {
+        "text": "Published on ${pubDate} | © ${author}",
+        "icon_url": "https://static.wikia.nocookie.net/starwars/images/d/d7/AtomicMassGames-Logo.svg/revision/latest/thumbnail/width/360/height/360?cb=20240306041639"
+        }
+        }
+            ]
+
+    "username": "APAC MTG",
+    "avatar_url": "https://www.canva.com/design/DAGHsNSO_zg/kVLXNTBf5jj3Bv8shblLHA/edit?utm_content=DAGHsNSO_zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    "content": "Planeswalk completed.",
+    "embeds": [
+         {
+       "title": "${title}",
+       "description": "${description}",
+       "url": "${link}",
+       "color": 16711680,
+       "footer": {
+         "text": "Published on ${pubDate} | © ${author}",
+         "icon_url": "https://static.wikia.nocookie.net/starwars/images/d/d7/AtomicMassGames-Logo.svg/revision/latest/thumbnail/width/360/height/360?cb=20240306041639"
+         }
+         }
+             ]
+            
+}
