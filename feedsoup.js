@@ -5,19 +5,19 @@ function sendToDiscord(item, webhookURL) {
     // Select the appropriate configuration based on the webhook URL
     if (webhookURL === "POKEMONTCG")
         config = {
-            // Pokemon TCG
+            config: username = "Pokemon TCG Asia-HK-EN"
         };
     elseif (webhookURL === "FABTCG");
         config = {
-            // FAB
+            config: username = "Brave Hero"
         };
     elseif (webhookURL === "MTGTCG");
             config = {
-                // MTG
+                config: username = "MTG APAC"
             };
     elseif (webhookURL === "https://discordapp.com/api/webhooks/1240869124125491251/Wb5YXtPx2yEP17l32vl3cAPfKG9HwDU8nfxpd8RrG4iaMbCQTG2FbKS0SiA8RAofFpU3") ;
             config = {
-                // SWLegion
+                config: username = "Legion Transmissions"
             };
     elseif (webhookURL === "D&D") ;
             config = {
@@ -25,15 +25,15 @@ function sendToDiscord(item, webhookURL) {
             };
     elseif (webhookURL === "GWorkshop") ;
             config = {
-                // Games Workshop
+                config: username = "Servitor"
             };
     elseif (webhookURL === "NSFigures");
             config = {
-                // NSFigures
+                config: username = "NSFigures"
             };
     elseif(webhookURL === "Warlord")
             config = {
-                // Warlord Games here
+                config: username = "Historics"
             };
     
     var message = {
